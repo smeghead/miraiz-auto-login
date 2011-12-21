@@ -1,0 +1,16 @@
+{
+  "name": "miraiz-auto-login",
+  "version": "1.0.1",
+  "description": "miraiz auto login.",
+  "icons": { "48": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.miraiz.bz/Default/Index/",
+        "https://*.miraiz.bz/Default/ErrorSRGC/request_module/Personal/request_action/Index/"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
